@@ -1,4 +1,4 @@
-The fare of shapes is a unity game of geometric shapes.
+The fate of shapes is a unity game of geometric shapes.
 It consists of 3 levels: Speed parkour, bunny hope and survival countdown under meteors.
 
 Hwo to play:
