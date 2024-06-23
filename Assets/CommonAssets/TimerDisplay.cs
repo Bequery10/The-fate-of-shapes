@@ -27,15 +27,15 @@ public class TimerDisplay : MonoBehaviour
             textMesh.text="";
             
             // Get the TextMeshProUGUI component
-            TextMeshProUGUI textMesh1 = GameObject.Find("Canvas").GetComponentInChildren<TextMeshProUGUI>();
-            //Debug.Log(textMesh1);
+            TextMeshProUGUI textMesh1 = GameObject.FindWithTag("EndCanvas").GetComponentInChildren<TextMeshProUGUI>();
+            
             // Set the text of the TextMeshProUGUI component
-            textMesh1.text = "Spent Time:\n    " + timerData.countUp.ToString();
+            textMesh1.text = "GAME OVER!\ntime: " +(timerData.countUp/1000 ).ToString() +(timerData.countUp%1000 ).ToString();
             // Change the text color of textMesh1
-            textMesh1.color = Color.red;
+            //textMesh1.color = Color.red;
 
             // Change the placement of textMesh1
-            textMesh1.rectTransform.anchoredPosition = new Vector2(75, 14);
+            textMesh1.rectTransform.anchoredPosition = new Vector2(50, 200);
           }
 
     }
